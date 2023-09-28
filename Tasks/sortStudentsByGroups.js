@@ -13,7 +13,7 @@ function sortStudentsByGroups(arr) {
         } else if (studSort == false) {
             // console.log("3")
             console.log(`Оставшиеся студенты: -`)
-        }else if (studSort[2] == undefined || studSort[1] == undefined || studSort.inclides() != true) {
+        }else if (studSort[2] == undefined || studSort[1] == undefined) {
             // console.log("2")
             console.log(`Оставшиеся студенты:${studSort}`)
         } 
