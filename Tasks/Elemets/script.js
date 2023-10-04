@@ -32,3 +32,4 @@ wrapper.append(div);
 // herts[0].replaceWith(cirles[0]);
 
 div.innerHTML = "hello world";
+div.textContent = "hello world";
