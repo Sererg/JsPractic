@@ -110,13 +110,16 @@ document.addEventListener('DOMContentLoaded', () =>{
           modal = document.querySelector('.modal'),
           modalCloseBtn = document.querySelector('[data-close]');
     
+    function openModal(){
+    modal.classList.add('show');
+    modal.classList.remove('hide');
+    document.body.style.overflow = 'hidden';
+    clearInterval(modaltimerId);
+    };
     modalTrigger.forEach(btn => {
-        btn.addEventListener('click', () => {
-            modal.classList.add('show');
-            modal.classList.remove('hide');
-            document.body.style.overflow = 'hidden';
-        });
+        btn.addEventListener('click', openModal);
     });
+
 
     function closeModel(){
         modal.classList.add('hide');
@@ -135,5 +138,16 @@ document.addEventListener('DOMContentLoaded', () =>{
         if(e.code === 'Escape' && modal.classList.contains('show')) {
             closeModel();
         }
-    })
+    });
+
+    const modaltimerId = setTimeout(openModal, 100000);
+
+    function showmodalByScroll(){
+        if( window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight -1){
+            openModal();
+            window.removeEventListener('scroll', showmodalByScroll);
+        }
+    }
+
+    window.addEventListener('scroll', showmodalByScroll);
 });
