@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     });
     //Timer
 
-    const deadline = '2023-10-20';
+    const deadline = '2023-12-30';
 
     function getTimeRemaining(endtime) {
         let days, hours, minutes, seconds;
