@@ -1,5 +1,5 @@
 const persone = {
-    name: 'Alex';
+    name: 'Alex',
     age: 25,
 
     get userAge() {
