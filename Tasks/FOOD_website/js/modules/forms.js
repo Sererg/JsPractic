@@ -78,4 +78,4 @@ function forms() {
         },4000);
     }
 }
-module.children = forms;
+module.exports = forms;
