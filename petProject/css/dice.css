@@ -1,0 +1,70 @@
+body {
+    position: static;
+}
+.background {
+
+    min-height: 100%;
+    
+    min-width: 640px;
+    
+    width: 100%;
+    
+    height: auto;
+    
+    position: fixed;
+    
+    top: 0;
+    
+    left: 0;
+
+    background-image: url("Image from wp-s.ru (1).jpg");
+}
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column1 {
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#status {
+    top: 5rem;
+    min-width: 200px;
+    margin: 0;
+		text-align: center;
+}
+#inputNumber{
+    font-size: large;
+}
+
+.dice {
+    width: 32px;
+    float: left;
+    background-image:url(graphics-dice.png);
+    background-size:cover;
+    background-position:center;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+}
+#number{
+    width: 100px;
+}
+.dice-roll {
+
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.block {display: inline-block; margin: 5px 5px 0 0; width: 15px; height: 15px; border: dashed 1px red;}
