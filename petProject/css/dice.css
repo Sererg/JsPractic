@@ -48,7 +48,7 @@ body {
 .dice {
     width: 32px;
     float: left;
-    background-image:url(graphics-dice.png);
+    background-image:url(iphone_13.png);
     background-size:cover;
     background-position:center;
     border: 1px solid black;
@@ -67,4 +67,4 @@ body {
     text-transform: capitalize;
 }
 
-.block {display: inline-block; margin: 5px 5px 0 0; width: 15px; height: 15px; border: dashed 1px red;}
+.block {display: inline-block; margin: 5px 5px 0 0; width: 15px; height: 15px; border: dashed 1px red;color: beige;}
