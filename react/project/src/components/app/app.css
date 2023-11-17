@@ -1,5 +1,7 @@
 .app {
     margin: 0 auto;
     max-width: 1000px;
+    background-color:#334a43;
+    border-radius: var(--bs-border-radius);
   }
   
