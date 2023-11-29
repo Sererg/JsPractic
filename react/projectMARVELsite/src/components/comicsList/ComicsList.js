@@ -10,7 +10,7 @@ const ComicsList = () => {
                     <a href="#">
                         <img src={uw} alt="ultimate war" className="comics__item-img"/>
                         <div className="comics__item-name">ULTIMATE X-MEN VOL. 5: ULTIMATE WAR TPB</div>
-                        <div className="comics__item-price">9.99$</div>
+                        <div className="comics__item-price">9.89$</div>
                     </a>
                 </li>
                 <li className="comics__item">
