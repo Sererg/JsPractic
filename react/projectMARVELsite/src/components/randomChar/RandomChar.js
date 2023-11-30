@@ -13,8 +13,7 @@ class RandomChar extends Component {
        error: false
     }
 
-    componentDidMount() {
-        this.foo.bar = 0;  
+    componentDidMount() { 
         this.updateChar();
     }
 
