@@ -1,0 +1,263 @@
+.app-header {
+    display: flex;
+    height: 99px;
+    align-items: center;
+    max-width: 1440px;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 50;
+}
+
+.MainIcon {
+    max-width: 192px;
+    max-height: 51px;
+}
+
+.headerText ul{
+    min-height: 19px;
+    list-style-type: none;
+    max-width: 571px;
+    display: inline-flex;
+    margin-right: -25px;
+    align-items: center;
+    gap: 32px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+
+}
+
+.headerText li {
+    color: #142B35;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.HeaderNumberText {
+    color: #142B35;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.number {
+    border-left: 1px solid #E0E0E0;
+    height: 34px;
+    padding-left: 24px;
+    list-style-type: none;
+    width: 144px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.buttonHeader {
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width:  135px;
+    height: 51px;
+    background: #3A98B2;
+    color: white;
+    border-radius: 5px;
+    border: solid 1px transparent;
+}
+
+.buttonHeaderMobile {
+   display: none;
+   font-family: "Work Sans";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   width:  135px;
+   height: 51px;
+   background: #3A98B2;
+   color: white;
+   border-radius: 5px;
+   border: solid 1px transparent;
+   margin-top: 120px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 32px;
+
+}
+.buttonHeaderMobile:hover {
+    background-color:#328BA4;;
+    transition: 0.7s;
+}
+.buttonHeader:hover {
+    background-color:#328BA4;;
+    transition: 0.7s;
+}
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items:center;
+    justify-content: end;
+    width: 30px;
+    height: 15px;
+}
+.burger span {
+    height: 2px;
+    width: 100%;
+    background-color:#142B35;
+}
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color:#142B35;
+
+}
+.burger::before {
+    top: 0;
+}
+.burger::after {
+    bottom: 0;
+}
+
+.burger.active span {
+    transform: scale(0);
+}
+.burger.active::before {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(45deg);
+}
+
+.burger.active::after {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-45deg);
+}
+
+.phone{
+    width: 18px;
+    height: 18px;
+}
+.blockNumberAndButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+.open {
+    display: flex !important;
+}
+
+@media (max-width:1350px) {
+ 
+    
+}
+@media (max-width:1200px) {
+    .headerText ul {
+        gap: 10px;
+    }
+    .MainIcon {
+        width: 134px;
+        height: 36px;
+    }
+   
+}
+@media (max-width:992px) {
+    .burger {
+        display: flex;
+    }
+    .app-header{
+        justify-content: space-between;
+    }
+    .headerText {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 82px;
+        z-index: 50;
+        overflow: auto;
+        background-color:#FFF;
+        animation: burgerAnimation 0.4s;
+    }
+    .headerText ul {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        margin-left: 16px;
+        margin-top: 56px;
+    }
+    .headerText li {
+        color: #142B35;
+
+        font-family: "Work Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .number {
+        border-left: 0;
+        width: auto;
+    }
+
+    .HeaderNumberText {
+        display: none;
+    }
+
+    .buttonHeaderMobile {
+        display:block;
+    }
+    .buttonHeader {
+        display: none;
+    }
+    .phone {
+        width: 24px;
+        height: 24px;
+    }
+    .MainIcon {
+        margin-left: 16px;
+    }
+    .blockNumberAndButton {
+        margin-right: 16px;
+    }
+    
+}
+@media (max-width:768px) {
+    
+}
+@media (max-width:480px) {
+    
+}
+@media (max-width:320px) {
+    .MainIcon {
+        width: 97px;
+        height: 26px;
+
+    }
+    .phone {
+        width: 23px;
+        height: 23px;
+    }
+
+}
+
+@keyframes burgerAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    
+}

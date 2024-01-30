@@ -1,0 +1,273 @@
+.app-register-panel {
+    max-width: 1440px;
+    min-height: 676px;
+    /* background: #ABD2D9;
+    opacity: 0.04; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 61px;
+    margin-top: 100px;
+    
+}
+.informationConteiner{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+.contentText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.contentTextSecond{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.contactInformation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.locationPin{
+    width: 24px;
+    height: 24px;   
+    color:#3A98B2;
+}
+
+.h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #142B35;
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: -0.24px;
+    text-transform: uppercase;
+}
+.infoMediumRegisterText {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #5B6E76;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+.contactInformationText {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #142B35;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    
+}
+.block {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* modal window*/
+
+.modalWindow {
+    width: 436px;
+    height: 404px;
+    
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 1px 1px 12px 0px rgba(71, 71, 71, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px;
+}
+.modalWindowHeader{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #142B35;
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}    
+
+.titleNamePhoneEmail {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #5B6E76;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.titleNamePhoneEmail::after {
+    content: "*";
+    color: #F2B91D;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.input1{
+    min-width: 212px;
+    height: 64px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+.inputName{
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+}
+.inputPhone{
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+}
+.input2{
+    min-width: 212px;
+    height: 64px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input3 {
+    width: 100%;
+    height: 64px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.inputEmail {
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+}
+
+.input4 {
+    width: 100%;
+    height: 97px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.titleNotes {
+    color: #5B6E76;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.inputNotes {
+    height: 73px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+}
+.submitRegister {
+    display: inline-flex;
+    padding: 14px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px;
+    background: #F2B91D;
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: solid 1px transparent;
+    margin-top: 32px;
+}
+.submitRegister:hover {
+        background-color:#ffffff;
+        transition: 0.7s;
+        color: #000000;
+        border: 1px solid #F2B91D;
+    
+}
+.inputSpan1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 12px;
+}
+.modalWindowText{
+    display:grid;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+@media (max-width:1350px) {
+ 
+    
+}
+@media (max-width:1200px) {
+  .informationConteiner {
+    margin-left: 16px;
+  }
+}
+@media (max-width:992px) {
+    .app-register-panel {
+        flex-direction: column;
+     }
+}
+
+@media (max-width:768px) {
+    .app-register-panel {
+        margin-bottom: 40px;
+    }
+    .inputSpan1 {
+        flex-direction: column;
+        width: 240px;
+    }
+    .modalWindow {
+        width: 264px;
+        height: 468px;
+        padding: 24px;
+    }
+    .modalWindowHeader {
+        font-size: 18px;
+    }
+    .modalWindowText {
+        margin-top: 32px;
+    }
+    .submitRegister {
+        display: flex;
+        width: 240px;
+        padding: 14px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+   
+}
+@media (max-width:480px) {
+   
+
+}
+@media (max-width:320px) {
+
+
+}

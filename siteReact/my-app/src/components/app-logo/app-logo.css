@@ -1,0 +1,102 @@
+.app-logo {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.conteinerScreen {
+    max-height: 687px;
+    max-width: 1438px;
+    background: #0b0909d1;
+    position: relative;
+}
+.mainImage{
+    max-width: 1440px;
+    max-height: 687px;
+	opacity: 40%;
+}
+.imgDescription {
+    top: 349px;
+    position: absolute;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+.logoText1 {
+    font-family: "Work Sans";
+    list-style-type: none;
+    border-left: 2px solid #F2B91D;
+    padding-left: 32px;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 60px;
+}
+.logoText2 {
+    font-family: "Work Sans";
+    list-style-type: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    margin-left: 92px;
+}
+
+@media (max-width:1200px) {
+   
+}
+@media (max-width:992px) {
+    .logoText1 {
+        font-size: 30px;
+    }
+    .mainImage {
+        max-height: 500px;
+    }
+    .imgDescription {
+        top: 225px;
+    }
+    .conteinerScreen {
+        max-height: 500px;
+    }
+   
+}
+@media (max-width:768px) {
+    .logoText2 {
+        line-height: 20px;
+    }
+   
+    .imgDescription {
+        top: 225px;
+    }
+}
+@media (max-width:480px) {
+    .logoText1 {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .logoText2 {
+        font-size: 14px;
+        margin-left: 62px;
+    }
+    .imgDescription {
+        top: 220px;
+    }
+    
+
+}
+@media (max-width:320px) {
+    .mainImage {
+        max-height: 469px;
+
+    }
+    .logoText1 {
+        font-size: 20px;
+        margin-left: 16px;
+    }
+    .logoText2 {
+        font-size: 14px;
+        margin-left: 25px;
+    }
+    .imgDescription {
+        top: 150px;
+    }
+}
